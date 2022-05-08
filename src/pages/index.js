@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Features from '@site/src/components/Features';
+import Features from '@site/src/components/features';
 
 export default function Home() {
   return (
