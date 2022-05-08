@@ -1,3 +1,14 @@
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.description {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -6,6 +17,18 @@
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
+}
+
+.featureTitle {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.featureDescription {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
 }
