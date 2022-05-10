@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Features from '@site/src/sections/features';
 import Hero from '@site/src/sections/hero';
+import Features from '../sections/features';
+import Benefits from '@site/src/sections/benefits';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <Benefits />
       </main>
     </Layout>
   );

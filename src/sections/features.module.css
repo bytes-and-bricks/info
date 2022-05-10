@@ -1,34 +1,58 @@
-.title {
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
   font-size: 48px;
   font-weight: bold;
 }
 
-.description {
+.subHeader {
   line-height: 30px;
   font-size: 24px;
   font-weight: 400;
 }
 
-.features {
+.featureContainer {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  flex-direction: row;
 }
 
-.featureSvg {
-  height: 300px;
-  width: 400px;
+.copyColumn {
+  display: flex;
+  order: 2;
 }
 
-.featureTitle {
+.copyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 3rem;
+  max-width: 512px;
+}
+
+.primaryText {
   line-height: 30px;
   font-size: 24px;
   font-weight: 700;
 }
 
-.featureDescription {
+.secondaryText {
   line-height: 24px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.imageColumn {
+  display: flex;
+  align-items: center;
+  max-width: 512px;
+}
+
+.image {
+  max-height: 512px;
+  display: flex;
+  align-items: center;
 }

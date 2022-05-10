@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './benefits.module.css';
 
-const FeatureList = [
+const BenefitsList = [
   {
     title: 'No Code',
     Svg: require('@site/static/img/no-code.svg').default,
@@ -32,7 +32,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Benefits({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -46,15 +46,15 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function SectionBenefits() {
   return (
     <section className={styles.features}>
       <div className="container text--center">
         <h2 className={styles.title}>Customization and Development Competency</h2>
         <h3 className={styles.description}>An essential ingredient to get the most value from Microsoft 365</h3>
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {BenefitsList.map((props, idx) => (
+            <Benefits key={idx} {...props} />
           ))}
         </div>
       </div>

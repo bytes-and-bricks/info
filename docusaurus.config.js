@@ -45,10 +45,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: 'YOUR_APP_ID',
+        apiKey: 'YOUR_SEARCH_API_KEY',
+        indexName: 'YOUR_INDEX_NAME',
+      },
+      colorMode: {
+        disableSwitch: true,
+      },
       navbar: {
         title: "Bytes'n Bricks",
         logo: {
-          alt: 'My Site Logo',
+          alt: "Bytes'n Bricks Logo",
           src: 'img/logo.svg',
         },
         items: [
@@ -58,10 +66,17 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'},
           {
             href: 'https://github.com/bytes-and-bricks',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],

@@ -2,29 +2,32 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './features.module.css';
 
+const header = "Batteries Included"
+const subHeader = "Everything you need to start organising your data today"
+
 const FeatureList = [
   {
-    title: 'No Code',
     Svg: require('@site/static/img/no-code.svg').default,
-    description: (
+    primaryText: 'The Power of a Theme, with the simplicity of a Starter',
+    secondaryText: (
       <>
         Sophisticated no code solutions are easily created by extending them with low code and pro code extensions that operate in a similar way to the no code platform that staff are familiar with.
       </>
     ),
   },
   {
-    title: 'Low Code',
     Svg: require('@site/static/img/low-code.svg').default,
-    description: (
+    primaryText: 'Content Model Included',
+    secondaryText: (
       <>
         Low code citizen developers use the hooks and extension points built by the pro code developers, and provide enhancements to no code. These are standardized, with defined integration points and embedded monitoring elements.
       </>
     ),
   },
   {
-    title: 'Pro Code',
     Svg: require('@site/static/img/pro-code.svg').default,
-    description: (
+    primaryText: 'Lightweight',
+    secondaryText: (
       <>
         Pro code develops extension points and components for no code/low code citizen developers to use. Examples include custom connectors for Power Platform or SPFx web parts for SharePoint and Teams.
       </>
@@ -32,26 +35,28 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, primaryText, secondaryText}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className={styles.featureContainer}>
+      <div className={styles.copyColumn}>
+        <div className={styles.copyContainer}>
+          <h3 className={styles.primaryText}>{primaryText}</h3>
+          <p className={styles.secondaryText}>{secondaryText}</p>
+        </div>
       </div>
-      <div className="text--left padding-horiz--md">
-        <h3 className={styles.featureTitle}>{title}</h3>
-        <p className={styles.featureDescription}>{description}</p>
+      <div className={styles.imageColumn}>
+        <Svg className={styles.image} role="img" />
       </div>
     </div>
   );
 }
 
-export default function HomepageFeatures() {
+export default function SectionFeatures() {
   return (
-    <section className={styles.features}>
+    <section className={styles.content}>
       <div className="container text--center">
-        <h2 className={styles.title}>Customization and Development Competency</h2>
-        <h3 className={styles.description}>An essential ingredient to get the most value from Microsoft 365</h3>
+        <h2 className={styles.header}>{header}</h2>
+        <h3 className={styles.subHeader}>{subHeader}</h3>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
