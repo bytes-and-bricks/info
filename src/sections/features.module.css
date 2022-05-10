@@ -19,9 +19,13 @@
   flex-direction: row;
 }
 
+.featureContainer.reverse {
+  flex-direction: row-reverse;
+}
+
 .copyColumn {
   display: flex;
-  order: 2;
+  order: 1;
 }
 
 .copyContainer {
@@ -29,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding-left: 3rem;
+  padding: 3rem;
   max-width: 512px;
 }
 
@@ -52,7 +56,7 @@
 }
 
 .image {
-  max-height: 512px;
+  max-height: 400px;
   display: flex;
   align-items: center;
 }
