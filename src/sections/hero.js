@@ -3,9 +3,9 @@ import styles from "./hero.module.css";
 import Svg from "@site/static/img/hero.svg";
 
 const secondaryHeader = "Digital Transformation";
-const header = "Digital Transformation";
+const header = "Digital Transformation for Architecture Offices";
 const description =
-  "Digital transformation tends to take a back seat to other business priorities but luckily, 2020 has changed the way we work forever. In this day and age, the success of modern businesses depends on connectivity, collaboration, easy access to information, speed of response, and the ability to make decisions in real-time.";
+  "Digital transformation tends to take a back seat to other business priorities, specially in the construction sector but luckily, 2020 has changed the way we work forever. In this day and age, the success of modern businesses depends on connectivity, collaboration, easy access to information, speed of response, and the ability to make decisions in real-time. Digital transformation is all about using the new-age technologies to evolve important business aspects and transform the employee work experience. And the key to digital transformation success lies in the effective implementation of a digital workplace.";
 
 const FeatureLinks = [
   {

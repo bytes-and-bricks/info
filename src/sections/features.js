@@ -2,41 +2,121 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./features.module.css";
 
-const header = "Batteries Included";
-const subHeader = "Everything you need to start organising your data today";
+const header = "Digital Workspace";
+const subHeader = "Single tool to acces, share, organise and collaborate on douments for Architecure Projects";
 
 const FeatureList = [
   {
     Svg: require("@site/static/img/no-code.svg").default,
-    primaryText: "The Power of a Theme, with the simplicity of a Starter",
+    primaryText: "Internal Communication Tools",
     secondaryText: (
       <>
-        Sophisticated no code solutions are easily created by extending them
-        with low code and pro code extensions that operate in a similar way to
-        the no code platform that staff are familiar with.
+        <ul>
+          <li>
+            <strong>Instant Chat and Communication</strong>
+            <p>Social, and video conferencing features to share articles, postings, and chat with co-workers in real-time.</p>
+          </li>
+          <li>
+            <strong>Team Discussions</strong>
+            <p>Quick sharing of ideas and thoughts with team members through chats, calls, meetings, and group conversations.</p>
+          </li>
+          <li>
+            <strong>Newsletters and Announcements</strong>
+            <p>Publishing of company, department, and team-wide communication to keep your employees always updated.</p>
+          </li>
+        </ul>
       </>
     ),
   },
   {
     Svg: require("@site/static/img/low-code.svg").default,
-    primaryText: "Content Model Included",
+    primaryText: "Task and Project Collaboration Tools",
     secondaryText: (
       <>
-        Low code citizen developers use the hooks and extension points built by
-        the pro code developers, and provide enhancements to no code. These are
-        standardized, with defined integration points and embedded monitoring
-        elements.
+        <ul>
+          <li>
+            <strong>Task Management</strong>
+            <p>Tracking of task issues, and custom tracking lists to complete all the listed tasks effectively.</p>
+          </li>
+          <li>
+            <strong>Shared Calendar</strong>
+            <p>Collaboration for team events, manage appointments and meetings using customized calendar overviews.</p>
+          </li>
+          <li>
+            <strong>Shared To-Do list</strong>
+            <p>Define project teams, assign tasks, and manage entire projects with a shared overview in a single window.</p>
+          </li>
+        </ul>
       </>
     ),
   },
   {
     Svg: require("@site/static/img/pro-code.svg").default,
-    primaryText: "Lightweight",
+    primaryText: "Document & Content Management Tools",
     secondaryText: (
       <>
-        Pro code develops extension points and components for no code/low code
-        citizen developers to use. Examples include custom connectors for Power
-        Platform or SPFx web parts for SharePoint and Teams.
+        <ul>
+          <li>
+            <strong>Secure Document Management</strong>
+            <p>A single window to view, edit, co-author, share and publish documents to collaborate seamlessly. It allows you to manage document versioning, provide role-based permissions to users.</p>
+          </li>
+          <li>
+            <strong>Library Management</strong>
+            <p>Easy access to multiple libraries for every department and project site, filter your libraries with Document Sync features.</p>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    Svg: require("@site/static/img/pro-code.svg").default,
+    primaryText: "Dynamic Integrations",
+    secondaryText: (
+      <>
+        <ul>
+          <li>
+            <strong>Microsoft 365 Hub</strong>
+            <p>Reap all the benefits of Office 365 with the productivity tools such as Outlook, OneDrive, Microsoft Teams, Delve, Yammer, Power BI (Business Intelligence), Power Apps, and OneNote.</p>
+          </li>
+          <li>
+            <strong>Microsoft Dynamics 365</strong>
+            <p>Easy CRM access to provide a connected view of data intelligence on customer records, transactions, behaviors, and predictive insight tools.</p>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    Svg: require("@site/static/img/pro-code.svg").default,
+    primaryText: "Architect's Pack",
+    secondaryText: (
+      <>
+        <ul>
+        <li>
+            <strong>Resource Management</strong>
+            <p>All informations and features to manage your ressources and their contracts.</p>
+          </li>
+          <li>
+            <strong>Hours Entry</strong>
+            <p>Time tracking and leave request will give allow to follow work in real-time.</p>
+          </li>
+          <li>
+            <strong>Financial analysis</strong>
+            <p>Gain insights and pilot your business with the financial analysis and reports</p>
+          </li>
+          <li>
+            <strong>Construction Costs Benchmarks</strong>
+            <p>The eCCC standard defines a cost type breakdown according to components and cost elements wich enables the verification and direct comparison of analogue components.</p>
+          </li>
+          <li>
+            <strong>Construction Costs Estimate</strong>
+            <p>Create cost estimates according to CFC anf eCCC, or your own construction cost plans. With IFC integration you can draw the quantities and dimensions directly from your BIM model.</p>
+          </li>
+          <li>
+            <strong>IFC viewer</strong>
+            <p>View, analyse and share your 3D model.</p>
+          </li>
+        </ul>
       </>
     ),
   },

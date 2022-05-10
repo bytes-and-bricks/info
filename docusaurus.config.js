@@ -45,15 +45,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        appId: 'YOUR_APP_ID',
-        apiKey: 'YOUR_SEARCH_API_KEY',
-        indexName: 'YOUR_INDEX_NAME',
-      },
       colorMode: {
         disableSwitch: true,
       },
       navbar: {
+        style: "primary",
         title: "Bytes'n Bricks",
         logo: {
           alt: "Bytes'n Bricks Logo",
@@ -75,10 +71,6 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          {
-            type: 'search',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -97,16 +89,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/sergicera',
               },
             ],
           },
