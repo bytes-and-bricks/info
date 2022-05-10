@@ -3,11 +3,11 @@ import clsx from "clsx";
 import styles from "./features.module.css";
 
 const header = "Digital Workspace";
-const subHeader = "Single tool to acces, share, organise and collaborate on douments for Architecure Projects";
+const subHeader = "Build a single tool to acces, share, organise and collaborate on douments of Architecure Projects";
 
 const FeatureList = [
   {
-    Svg: require("@site/static/img/no-code.svg").default,
+    Svg: require("@site/static/img/chat.svg").default,
     primaryText: "Internal Communication Tools",
     secondaryText: (
       <>
@@ -29,7 +29,7 @@ const FeatureList = [
     ),
   },
   {
-    Svg: require("@site/static/img/low-code.svg").default,
+    Svg: require("@site/static/img/tasks.svg").default,
     primaryText: "Task and Project Collaboration Tools",
     secondaryText: (
       <>
@@ -46,12 +46,24 @@ const FeatureList = [
             <strong>Shared To-Do list</strong>
             <p>Define project teams, assign tasks, and manage entire projects with a shared overview in a single window.</p>
           </li>
+          <li>
+            <strong>Resource Management</strong>
+            <p>All informations and features to manage your ressources and their contracts.</p>
+          </li>
+          <li>
+            <strong>Hours Entry</strong>
+            <p>Time tracking and leave request will give allow to follow work in real-time.</p>
+          </li>
+          <li>
+            <strong>Financial analysis</strong>
+            <p>Gain insights and pilot your business with the financial analysis and reports</p>
+          </li>
         </ul>
       </>
     ),
   },
   {
-    Svg: require("@site/static/img/pro-code.svg").default,
+    Svg: require("@site/static/img/document.svg").default,
     primaryText: "Document & Content Management Tools",
     secondaryText: (
       <>
@@ -64,12 +76,20 @@ const FeatureList = [
             <strong>Library Management</strong>
             <p>Easy access to multiple libraries for every department and project site, filter your libraries with Document Sync features.</p>
           </li>
+          <li>
+            <strong>Construction Costs Benchmarks</strong>
+            <p>The eCCC standard defines a cost type breakdown according to components and cost elements wich enables the verification and direct comparison of analogue components.</p>
+          </li>
+          <li>
+            <strong>Construction Costs Estimate</strong>
+            <p>Create cost estimates according to CFC anf eCCC, or your own construction cost plans. With IFC integration you can draw the quantities and dimensions directly from your BIM model.</p>
+          </li>
         </ul>
       </>
     ),
   },
   {
-    Svg: require("@site/static/img/pro-code.svg").default,
+    Svg: require("@site/static/img/integration.svg").default,
     primaryText: "Dynamic Integrations",
     secondaryText: (
       <>
@@ -81,36 +101,6 @@ const FeatureList = [
           <li>
             <strong>Microsoft Dynamics 365</strong>
             <p>Easy CRM access to provide a connected view of data intelligence on customer records, transactions, behaviors, and predictive insight tools.</p>
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    Svg: require("@site/static/img/pro-code.svg").default,
-    primaryText: "Architect's Pack",
-    secondaryText: (
-      <>
-        <ul>
-        <li>
-            <strong>Resource Management</strong>
-            <p>All informations and features to manage your ressources and their contracts.</p>
-          </li>
-          <li>
-            <strong>Hours Entry</strong>
-            <p>Time tracking and leave request will give allow to follow work in real-time.</p>
-          </li>
-          <li>
-            <strong>Financial analysis</strong>
-            <p>Gain insights and pilot your business with the financial analysis and reports</p>
-          </li>
-          <li>
-            <strong>Construction Costs Benchmarks</strong>
-            <p>The eCCC standard defines a cost type breakdown according to components and cost elements wich enables the verification and direct comparison of analogue components.</p>
-          </li>
-          <li>
-            <strong>Construction Costs Estimate</strong>
-            <p>Create cost estimates according to CFC anf eCCC, or your own construction cost plans. With IFC integration you can draw the quantities and dimensions directly from your BIM model.</p>
           </li>
           <li>
             <strong>IFC viewer</strong>
