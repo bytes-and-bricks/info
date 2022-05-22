@@ -63,6 +63,12 @@ const config = {
             label: 'Docs',
           },
           {
+            to: '/demo',
+            docId: 'demo',
+            position: 'left',
+            label: 'Demo',
+          },
+          {
             to: '/blog',
             label: 'Blog',
             position: 'left'},
